@@ -13,6 +13,7 @@
 		B6DAF6B52B46547C00BD072D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DAF6B42B46547C00BD072D /* Assets.xcassets */; };
 		B6DAF6B82B46547C00BD072D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAF6B62B46547C00BD072D /* LaunchScreen.storyboard */; };
 		B6DAF6C72B46701400BD072D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6C62B46701400BD072D /* OnboardingViewController.swift */; };
+		B6DAF6C92B4674EC00BD072D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6C82B4674EC00BD072D /* OnboardingView.swift */; };
 		C4153134B4805F51F3976F35 /* Pods_Gitperson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4BA3D5CDF8CC32C343C80E /* Pods_Gitperson.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		B6DAF6B72B46547C00BD072D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6DAF6B92B46547C00BD072D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6DAF6C62B46701400BD072D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		B6DAF6C82B4674EC00BD072D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		BB4BA3D5CDF8CC32C343C80E /* Pods_Gitperson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gitperson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FB50D62206EAD79A9B961D /* Pods-Gitperson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gitperson.debug.xcconfig"; path = "Target Support Files/Pods-Gitperson/Pods-Gitperson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +73,8 @@
 		B6DAF6AA2B46547900BD072D /* Gitperson */ = {
 			isa = PBXGroup;
 			children = (
-				B6DAF6C12B4663D900BD072D /* Features */,
 				B6DAF6BF2B46638700BD072D /* Application */,
+				B6DAF6C12B4663D900BD072D /* Features */,
 				B6DAF6C02B46639100BD072D /* Resources */,
 			);
 			path = Gitperson;
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B6DAF6C62B46701400BD072D /* OnboardingViewController.swift */,
+				B6DAF6C82B4674EC00BD072D /* OnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,7 +147,6 @@
 				E2FB50D62206EAD79A9B961D /* Pods-Gitperson.debug.xcconfig */,
 				3B6749A1DB9E0491C6158330 /* Pods-Gitperson.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -265,6 +267,7 @@
 				B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */,
 				B6DAF6AC2B46547900BD072D /* AppDelegate.swift in Sources */,
 				B6DAF6AE2B46547900BD072D /* SceneDelegate.swift in Sources */,
+				B6DAF6C92B4674EC00BD072D /* OnboardingView.swift in Sources */,
 				B6DAF6C72B46701400BD072D /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
