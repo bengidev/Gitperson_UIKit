@@ -12,9 +12,12 @@
 		B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AF2B46547900BD072D /* ViewController.swift */; };
 		B6DAF6B52B46547C00BD072D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6DAF6B42B46547C00BD072D /* Assets.xcassets */; };
 		B6DAF6B82B46547C00BD072D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DAF6B62B46547C00BD072D /* LaunchScreen.storyboard */; };
+		B6DAF6C72B46701400BD072D /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6C62B46701400BD072D /* OnboardingViewController.swift */; };
+		C4153134B4805F51F3976F35 /* Pods_Gitperson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB4BA3D5CDF8CC32C343C80E /* Pods_Gitperson.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6749A1DB9E0491C6158330 /* Pods-Gitperson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gitperson.release.xcconfig"; path = "Target Support Files/Pods-Gitperson/Pods-Gitperson.release.xcconfig"; sourceTree = "<group>"; };
 		B6DAF6A82B46547900BD072D /* Gitperson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gitperson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAF6AB2B46547900BD072D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6DAF6AD2B46547900BD072D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		B6DAF6B42B46547C00BD072D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6DAF6B72B46547C00BD072D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6DAF6B92B46547C00BD072D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6DAF6C62B46701400BD072D /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		BB4BA3D5CDF8CC32C343C80E /* Pods_Gitperson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gitperson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2FB50D62206EAD79A9B961D /* Pods-Gitperson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gitperson.debug.xcconfig"; path = "Target Support Files/Pods-Gitperson/Pods-Gitperson.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4153134B4805F51F3976F35 /* Pods_Gitperson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93E600E26E9A287360E32858 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB4BA3D5CDF8CC32C343C80E /* Pods_Gitperson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6DAF69F2B46547900BD072D = {
 			isa = PBXGroup;
 			children = (
 				B6DAF6AA2B46547900BD072D /* Gitperson */,
 				B6DAF6A92B46547900BD072D /* Products */,
+				D59CB4DC0914CE567DF2CF09 /* Pods */,
+				93E600E26E9A287360E32858 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +100,7 @@
 		B6DAF6C12B4663D900BD072D /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				B6DAF6C42B466FE600BD072D /* Onboarding */,
 				B6DAF6C22B4663E000BD072D /* Home */,
 			);
 			path = Features;
@@ -104,6 +122,32 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B6DAF6C42B466FE600BD072D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B6DAF6C52B466FF600BD072D /* Views */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B6DAF6C52B466FF600BD072D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6DAF6C62B46701400BD072D /* OnboardingViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D59CB4DC0914CE567DF2CF09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2FB50D62206EAD79A9B961D /* Pods-Gitperson.debug.xcconfig */,
+				3B6749A1DB9E0491C6158330 /* Pods-Gitperson.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6DAF6BC2B46547C00BD072D /* Build configuration list for PBXNativeTarget "Gitperson" */;
 			buildPhases = (
+				9C2F96958105C6D2C0571444 /* [CP] Check Pods Manifest.lock */,
 				B6DAF6A42B46547900BD072D /* Sources */,
 				B6DAF6A52B46547900BD072D /* Frameworks */,
 				B6DAF6A62B46547900BD072D /* Resources */,
+				57FBAD93CE4E2C048C676C05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +215,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		57FBAD93CE4E2C048C676C05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gitperson/Pods-Gitperson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gitperson/Pods-Gitperson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gitperson/Pods-Gitperson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C2F96958105C6D2C0571444 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gitperson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6DAF6A42B46547900BD072D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -177,6 +265,7 @@
 				B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */,
 				B6DAF6AC2B46547900BD072D /* AppDelegate.swift in Sources */,
 				B6DAF6AE2B46547900BD072D /* SceneDelegate.swift in Sources */,
+				B6DAF6C72B46701400BD072D /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +404,7 @@
 		};
 		B6DAF6BD2B46547C00BD072D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2FB50D62206EAD79A9B961D /* Pods-Gitperson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +437,7 @@
 		};
 		B6DAF6BE2B46547C00BD072D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B6749A1DB9E0491C6158330 /* Pods-Gitperson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
