@@ -13,6 +13,10 @@
 		B66460FC2B4A8D920065637D /* ViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F62B4A8D920065637D /* ViewControllerPreview.swift */; };
 		B66460FD2B4A8D920065637D /* NavigationControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F72B4A8D920065637D /* NavigationControllerPreview.swift */; };
 		B66460FE2B4A8D920065637D /* PreviewTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F82B4A8D920065637D /* PreviewTabBarItem.swift */; };
+		B66461012B4A942A0065637D /* AppFactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66461002B4A942A0065637D /* AppFactoryView.swift */; };
+		B66461062B4AA1DD0065637D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66461032B4AA1DD0065637D /* UIViewController+Extensions.swift */; };
+		B66461072B4AA1DD0065637D /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66461042B4AA1DD0065637D /* UIFont+Extensions.swift */; };
+		B66461082B4AA1DD0065637D /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66461052B4AA1DD0065637D /* UIScreen+Extensions.swift */; };
 		B6DAF6AC2B46547900BD072D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AB2B46547900BD072D /* AppDelegate.swift */; };
 		B6DAF6AE2B46547900BD072D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AD2B46547900BD072D /* SceneDelegate.swift */; };
 		B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AF2B46547900BD072D /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 		B66460F62B4A8D920065637D /* ViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPreview.swift; sourceTree = "<group>"; };
 		B66460F72B4A8D920065637D /* NavigationControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerPreview.swift; sourceTree = "<group>"; };
 		B66460F82B4A8D920065637D /* PreviewTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTabBarItem.swift; sourceTree = "<group>"; };
+		B66461002B4A942A0065637D /* AppFactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactoryView.swift; sourceTree = "<group>"; };
+		B66461032B4AA1DD0065637D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		B66461042B4AA1DD0065637D /* UIFont+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		B66461052B4AA1DD0065637D /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
 		B6DAF6A82B46547900BD072D /* Gitperson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gitperson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAF6AB2B46547900BD072D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6DAF6AD2B46547900BD072D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,24 @@
 			path = PreviewView;
 			sourceTree = "<group>";
 		};
+		B66460FF2B4A94120065637D /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				B66461002B4A942A0065637D /* AppFactoryView.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		B66461022B4AA1A80065637D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B66461042B4AA1DD0065637D /* UIFont+Extensions.swift */,
+				B66461052B4AA1DD0065637D /* UIScreen+Extensions.swift */,
+				B66461032B4AA1DD0065637D /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B6DAF69F2B46547900BD072D = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +131,8 @@
 		B6DAF6AA2B46547900BD072D /* Gitperson */ = {
 			isa = PBXGroup;
 			children = (
+				B66461022B4AA1A80065637D /* Extensions */,
+				B66460FF2B4A94120065637D /* Factories */,
 				B6DAF6BF2B46638700BD072D /* Application */,
 				B6DAF6C12B4663D900BD072D /* Features */,
 				B6DAF6C02B46639100BD072D /* Resources */,
@@ -298,7 +326,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66461072B4AA1DD0065637D /* UIFont+Extensions.swift in Sources */,
 				B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */,
+				B66461062B4AA1DD0065637D /* UIViewController+Extensions.swift in Sources */,
 				B66460FE2B4A8D920065637D /* PreviewTabBarItem.swift in Sources */,
 				B6DAF6AC2B46547900BD072D /* AppDelegate.swift in Sources */,
 				B66460FB2B4A8D920065637D /* TabBarControllerPreview.swift in Sources */,
@@ -307,8 +337,10 @@
 				B6DAF6C92B4674EC00BD072D /* OnboardingView.swift in Sources */,
 				B66460FA2B4A8D920065637D /* ViewPreview.swift in Sources */,
 				B66460F92B4A8D920065637D /* DesignTime+BackDeploy.swift in Sources */,
+				B66461082B4AA1DD0065637D /* UIScreen+Extensions.swift in Sources */,
 				B66460FC2B4A8D920065637D /* ViewControllerPreview.swift in Sources */,
 				B6DAF6C72B46701400BD072D /* OnboardingViewController.swift in Sources */,
+				B66461012B4A942A0065637D /* AppFactoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
