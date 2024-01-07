@@ -2,6 +2,8 @@
 This repository was intended for the purpose of storing the process history of learning Swift with UIKit and implementing Combine.
 
 ## Features 🕹️
+- AppIcon
+- Launchscreen Storyboards
 - Search GitHub profile with username
 - Download image with URL using Kingfisher
 - 
