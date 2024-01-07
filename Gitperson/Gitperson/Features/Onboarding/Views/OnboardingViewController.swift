@@ -10,7 +10,6 @@ import UIKit
 final class OnboardingViewController: UIViewController {
     private let onboardingView = OnboardingView()
 
-
     // MARK: Initializers
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)

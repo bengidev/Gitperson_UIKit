@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B66460F92B4A8D920065637D /* DesignTime+BackDeploy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F22B4A8D920065637D /* DesignTime+BackDeploy.swift */; };
+		B66460FA2B4A8D920065637D /* ViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F42B4A8D920065637D /* ViewPreview.swift */; };
+		B66460FB2B4A8D920065637D /* TabBarControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F52B4A8D920065637D /* TabBarControllerPreview.swift */; };
+		B66460FC2B4A8D920065637D /* ViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F62B4A8D920065637D /* ViewControllerPreview.swift */; };
+		B66460FD2B4A8D920065637D /* NavigationControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F72B4A8D920065637D /* NavigationControllerPreview.swift */; };
+		B66460FE2B4A8D920065637D /* PreviewTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66460F82B4A8D920065637D /* PreviewTabBarItem.swift */; };
 		B6DAF6AC2B46547900BD072D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AB2B46547900BD072D /* AppDelegate.swift */; };
 		B6DAF6AE2B46547900BD072D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AD2B46547900BD072D /* SceneDelegate.swift */; };
 		B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DAF6AF2B46547900BD072D /* ViewController.swift */; };
@@ -19,6 +25,12 @@
 
 /* Begin PBXFileReference section */
 		3B6749A1DB9E0491C6158330 /* Pods-Gitperson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gitperson.release.xcconfig"; path = "Target Support Files/Pods-Gitperson/Pods-Gitperson.release.xcconfig"; sourceTree = "<group>"; };
+		B66460F22B4A8D920065637D /* DesignTime+BackDeploy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DesignTime+BackDeploy.swift"; sourceTree = "<group>"; };
+		B66460F42B4A8D920065637D /* ViewPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPreview.swift; sourceTree = "<group>"; };
+		B66460F52B4A8D920065637D /* TabBarControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarControllerPreview.swift; sourceTree = "<group>"; };
+		B66460F62B4A8D920065637D /* ViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPreview.swift; sourceTree = "<group>"; };
+		B66460F72B4A8D920065637D /* NavigationControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerPreview.swift; sourceTree = "<group>"; };
+		B66460F82B4A8D920065637D /* PreviewTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewTabBarItem.swift; sourceTree = "<group>"; };
 		B6DAF6A82B46547900BD072D /* Gitperson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gitperson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6DAF6AB2B46547900BD072D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6DAF6AD2B46547900BD072D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +64,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B66460F12B4A8D920065637D /* PreviewViewLegacyOSCompileFix */ = {
+			isa = PBXGroup;
+			children = (
+				B66460F22B4A8D920065637D /* DesignTime+BackDeploy.swift */,
+			);
+			path = PreviewViewLegacyOSCompileFix;
+			sourceTree = "<group>";
+		};
+		B66460F32B4A8D920065637D /* PreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				B66460F42B4A8D920065637D /* ViewPreview.swift */,
+				B66460F52B4A8D920065637D /* TabBarControllerPreview.swift */,
+				B66460F62B4A8D920065637D /* ViewControllerPreview.swift */,
+				B66460F72B4A8D920065637D /* NavigationControllerPreview.swift */,
+				B66460F82B4A8D920065637D /* PreviewTabBarItem.swift */,
+			);
+			path = PreviewView;
+			sourceTree = "<group>";
+		};
 		B6DAF69F2B46547900BD072D = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +108,8 @@
 				B6DAF6BF2B46638700BD072D /* Application */,
 				B6DAF6C12B4663D900BD072D /* Features */,
 				B6DAF6C02B46639100BD072D /* Resources */,
+				B66460F32B4A8D920065637D /* PreviewView */,
+				B66460F12B4A8D920065637D /* PreviewViewLegacyOSCompileFix */,
 			);
 			path = Gitperson;
 			sourceTree = "<group>";
@@ -265,9 +299,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6DAF6B02B46547900BD072D /* ViewController.swift in Sources */,
+				B66460FE2B4A8D920065637D /* PreviewTabBarItem.swift in Sources */,
 				B6DAF6AC2B46547900BD072D /* AppDelegate.swift in Sources */,
+				B66460FB2B4A8D920065637D /* TabBarControllerPreview.swift in Sources */,
 				B6DAF6AE2B46547900BD072D /* SceneDelegate.swift in Sources */,
+				B66460FD2B4A8D920065637D /* NavigationControllerPreview.swift in Sources */,
 				B6DAF6C92B4674EC00BD072D /* OnboardingView.swift in Sources */,
+				B66460FA2B4A8D920065637D /* ViewPreview.swift in Sources */,
+				B66460F92B4A8D920065637D /* DesignTime+BackDeploy.swift in Sources */,
+				B66460FC2B4A8D920065637D /* ViewControllerPreview.swift in Sources */,
 				B6DAF6C72B46701400BD072D /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
